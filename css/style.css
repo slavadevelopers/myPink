@@ -1,6 +1,10 @@
 body {
   margin: 0px;
 }
-.page-header {
+.page-header,
+body {
   background: rgba(29, 38, 49, .3);
+}
+.logo__glasses {
+  margin-right: 10px;
 }
