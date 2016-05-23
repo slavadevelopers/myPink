@@ -1,10 +1,54 @@
-body {
-  margin: 0px;
+.page-header {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px 20px;
 }
-.page-header,
-body {
-  background: rgba(29, 38, 49, .3);
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.logo__glasses {
-  margin-right: 10px;
+.page-header--contains {
+  width: 280px;
+  margin: 0 auto;
+}
+.logo {
+  float: left;
+  width: 74px;
+}
+.logo .logo__glasses {
+  display: none;
+}
+.main-nav {
+  float: right;
+  width: 50px;
+}
+.main-nav .main-nav__list {
+  display: none;
+}
+.main-nav .main-nav__burger {
+  background: url("../img/main-nav__burger.png");
+  display: block;
+  width: 50px;
+  height: 24px;
+}
+.presentation {
+  background: url(../img/presentation__iphone.png) no-repeat left bottom, url("../img/bg-presentation.png") no-repeat;
+  position: relative;
+  top: -83px;
+  z-index: -1;
+  padding-top: 67px;
+}
+.presentation .presentation__title {
+  margin-top: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 313px;
+}
+.main--contains {
+  width: 320px;
+  margin: 0 auto;
 }
