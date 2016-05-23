@@ -1,0 +1,42 @@
+.padding(@a) {
+  padding-right: 36px;	
+}
+.downloads-apps {
+  background-color: @bg-downloads-apps;
+  font-size: @base-font-size * 0;
+  padding: 0px 20px;
+  padding-top: 28px;
+  font-family: @base-font-family;
+  & .downloads-apps__button {
+    display: block;
+    font-size: floor(@base-font-size * 1.3);
+    color: @color-white;
+    text-decoration: none;
+    font-weight: @bold;
+    text-align: @cn;
+    border: 3px solid @color-white;
+    padding: 11px 35px;
+    padding-bottom: 13px;
+    border-radius: 30px;
+  }
+  & .downloads-apps__downloads-icons--inner {
+    text-align: @cn;
+    padding-top: 30px;
+    padding-bottom: 22px;
+  }
+  & .downloads-apps__apple-icon {
+    .padding(36px);
+  }
+  & .downloads-apps__android-icon {
+    .padding(36px);
+  }
+  & .downloads-apps__description {
+  	font-size: @base-font-size;
+  	text-align: @cn;
+  	color: @color-white;
+  	line-height: @lineh-base;
+  	font-weight: @light;
+  	padding-bottom: 30px;
+  	margin: 0px;
+  }
+}
