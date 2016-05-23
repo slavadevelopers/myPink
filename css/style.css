@@ -1,6 +1,7 @@
 .page-header {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 20px 20px;
+  position: absolute;
 }
 .clearfix::after {
   content: "";
@@ -30,10 +31,10 @@
   display: block;
   width: 50px;
   height: 24px;
+  cursor: pointer;
 }
 .presentation {
   background: url(../img/presentation__iphone.png) no-repeat left bottom, url("../img/bg-presentation.png") no-repeat;
-  position: relative;
   top: -83px;
   z-index: -1;
   padding-top: 67px;
@@ -49,6 +50,49 @@
   padding-bottom: 313px;
 }
 .main--contains {
+  width: 320px;
+  margin: 0 auto;
+}
+.downloads-apps {
+  background-color: #1d2631;
+  font-size: 0px;
+  padding: 0px 20px;
+  padding-top: 28px;
+  font-family: "Open Sans", sans-serif;
+}
+.downloads-apps .downloads-apps__button {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  border: 3px solid #fff;
+  padding: 11px 35px;
+  padding-bottom: 13px;
+  border-radius: 30px;
+}
+.downloads-apps .downloads-apps__downloads-icons--inner {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 22px;
+}
+.downloads-apps .downloads-apps__apple-icon {
+  padding-right: 36px;
+}
+.downloads-apps .downloads-apps__android-icon {
+  padding-right: 36px;
+}
+.downloads-apps .downloads-apps__description {
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  line-height: 24px;
+  font-weight: 300;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+body {
   width: 320px;
   margin: 0 auto;
 }
