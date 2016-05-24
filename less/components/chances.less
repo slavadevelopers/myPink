@@ -1,0 +1,41 @@
+.chances {
+  background-color: @grey-242;
+  text-align: @cn;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 51px;
+  & .chances__chance-item:last-child {
+    display: none;
+  }
+  & .chances__chance-item:nth-child(3) {
+    display: flex;
+    flex-direction: column-reverse;
+    & .chances__img-item {
+      display: block;
+      order: 1;
+      align-self: @cn;
+    }
+    & .chances__title {
+      order: 3;
+      margin-top: 18px;
+    }
+    & .chances__description {
+      order: 2;
+      margin-top: 0px;
+      margin-bottom: 39px;
+    }
+  }
+  & .chances__img-item {
+    display: none;
+  }
+  & .chances__title {
+    .bold-font(@color-black);
+    margin-bottom: 12px;
+    margin-top: 30px;
+  }
+  & .chances__description {
+    .normal-font(@dark-blue);
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
