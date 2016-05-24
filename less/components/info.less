@@ -1,0 +1,15 @@
+.info {
+  .light-font(@dark-blue);
+  padding-top: 12px;
+  position: relative;
+  & .info__question {
+    text-align: @cn;
+  }
+  & .info__offer {
+    text-align: @cn;
+    padding-bottom: 6px;
+  }
+  &::after {
+    .triangle;
+  };
+}
