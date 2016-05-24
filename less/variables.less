@@ -7,3 +7,34 @@
 @bg-downloads-apps: #1d2631;
 @cn: center;
 @lineh-base: 24px;
+@dark-blue: #283645;
+@grey-242: #f2f2f2;
+@color-black: #000;
+@gray-190: #bec2c7;
+.light-font(@color) {
+  font-size: ceil(@base-font-size * 1.7);
+  font-family: @base-font-family;
+  color: @color; 
+  font-weight: @light;
+}
+.normal-font(@color, @line-height: @lineh-base) {
+  font-size: @base-font-size;
+  font-family: @base-font-family;
+  color: @color; 
+  font-weight: @normal;
+  line-height: @line-height;
+}
+.bold-font(@color, @line-height: @lineh-base) {
+  font-size: floor(@base-font-size * 1.3);
+  font-family: @base-font-family;
+  color: @color; 
+  font-weight: @bold;
+  line-height: @line-height;
+}
+.triangle(@color: @color-white) {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 320px solid @color;
+  border-bottom: 32px solid transparent;
+}
