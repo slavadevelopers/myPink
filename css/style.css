@@ -41,13 +41,13 @@
 }
 .presentation .presentation__title {
   margin-top: 32px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 24px;
-  color: #fff;
   text-align: center;
   margin-bottom: 0px;
   padding-bottom: 313px;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 300;
 }
 .main--contains {
   width: 320px;
@@ -95,4 +95,113 @@
 body {
   width: 320px;
   margin: 0 auto;
+}
+.info {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: #283645;
+  font-weight: 300;
+  padding-top: 12px;
+  position: relative;
+}
+.info .info__question {
+  text-align: center;
+}
+.info .info__offer {
+  text-align: center;
+  padding-bottom: 6px;
+}
+.info::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 320px solid #fff;
+  border-bottom: 32px solid transparent;
+}
+.chances {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 51px;
+}
+.chances .chances__chance-item:last-child {
+  display: none;
+}
+.chances .chances__chance-item:nth-child(3) {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.chances .chances__chance-item:nth-child(3) .chances__img-item {
+  display: block;
+  order: 1;
+  align-self: center;
+}
+.chances .chances__chance-item:nth-child(3) .chances__title {
+  order: 3;
+  margin-top: 18px;
+}
+.chances .chances__chance-item:nth-child(3) .chances__description {
+  order: 2;
+  margin-top: 0px;
+  margin-bottom: 39px;
+}
+.chances .chances__img-item {
+  display: none;
+}
+.chances .chances__title {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-top: 30px;
+}
+.chances .chances__description {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #283645;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.reviews {
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.reviews .rewiews__review-item:nth-child(2) {
+  display: none;
+}
+.reviews .rewiews__review-item:nth-child(3) {
+  display: none;
+}
+.reviews .reviews__name {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 45px;
+  margin-bottom: 16px;
+}
+.reviews .reviews__details {
+  display: none;
+}
+.reviews .reviews__text {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #283645;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 33px;
+}
+.control .control__toggle {
+  display: inline-block;
+  border: 3px solid #000;
+  width: 6px;
+  height: 5px;
+  background-color: #bec2c7;
 }
