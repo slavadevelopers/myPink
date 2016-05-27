@@ -1,0 +1,59 @@
+.contacts {
+  text-align: @cn;
+  & .contacts__description {
+    position: relative;
+    &::after {
+    content: "";
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-top: 35px solid @color-white;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    }
+  }
+  & .contacts__text {
+    .light-font(@dark-blue);
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+  & .contacts__phone {
+
+  }
+  & .contacts__phone-text {
+    .bold-font(@dark-blue, 18px);
+    margin-bottom: 2px;  
+  }
+  & .contacts__phone-number{
+    .light-font(@red-210);
+    margin-bottom: 22px;
+    margin-top: 2px;
+  }
+  & .contacts__arrive {
+
+  }
+  & .contacts__arrive-text {
+    .bold-font(@dark-blue, 18px);
+    margin-bottom: 2px;
+  }
+  & .contacts__arrive-address {
+    .light-font(@red-210);
+    margin-bottom: 22px;
+    margin-top: 2px;
+  }
+  & .contacts__mail {
+
+  }
+  & .contacts__mail-text {
+    .bold-font(@dark-blue, 18px);
+    margin-bottom: 2px;
+  }
+  & .contacts__mail-email {
+    .light-font(@red-210);
+    margin-bottom: 22px;
+    margin-top: 2px;
+  }
+  & .contacts__map {
+    height: 200px;
+  }
+}
