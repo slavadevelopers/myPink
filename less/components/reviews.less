@@ -2,6 +2,7 @@
   text-align: @cn;
   padding-right: 20px;
   padding-left: 20px;
+  position: relative;
   & .rewiews__review-item {
     &:nth-child(2) {
       display: none;
@@ -20,6 +21,9 @@
   }
   & .reviews__text {
     .normal-font(@dark-blue, 30px);
-    margin-bottom: 33px;
+    margin-bottom: 32px;
   }
+  &::after {
+    .triangle;
+  };
 }
