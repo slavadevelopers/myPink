@@ -90,18 +90,25 @@
       <section class="cost">
         <table class="cost__table">
           <tr>
-            <th></th><th>Базовый 1,99 USD</th><th>Стандарт 3,99 USD</th><th>Анлим 9,99 USD</th>
+            <th></th><th>Базовый<br> <span>1,99 USD</span></th><th>Стандарт<br> <span>3,99 USD</span></th><th>Анлим<br> <span>9,99 USD</span></th>
           </tr>
           <tr>
-            <td>Розовый фильтер</td><td>+</td><td>+</td><td>+</td>
+            <td>Розовый фильтр</td><td>Розовый фильтр</td><td>Розовый фильтр</td><td>Розовый фильтр</td>
           </tr>
           <tr>
-            <td>Смайлики</td><td>-</td><td>+</td><td>+</td>
+            <td>Смайлики</td><td>Смайлики</td><td>Смайлики</td><td>Смайлики</td>
           </tr>
           <tr>
-            <td>Комментарии</td><td>-</td><td>-</td><td>+</td>
+            <td>Комментарии</td><td>Комментарии</td><td>Комментарии</td><td>Комментарии</td>
           </tr>
         </table>
+        <section class="control">
+          <span class="control__toggle--left"></span>
+          <span class="control__toggle--right"></span>
+          <i class="control__toggle"></i>
+          <i class="control__toggle  control__toggle--active"></i>
+          <i class="control__toggle"></i>
+        </section>
       </section>
       <article class="contacts">
         <section class="contacts__description">
@@ -120,14 +127,14 @@
           </section>
         </section>
         <section class="contacts__map">
-          
+          <div id="map"></div> 
         </section>
       </article>
     </main>      
       
       
         
-    <footer class="footer--contains">
+    <footer class="main-footer footer--contains">
       <a class="logo" href="#">
         <img class="logo__glasses" src="img/glasses.png" alt="Очки" width="59" height="40"><img src="img/pink.png" alt="Pink" width="75" height="34">
       </a> 
@@ -140,5 +147,9 @@
         Website by<a href="#"></a> for <a href="#"></a>
       </section>
     </footer>
+    <script src="js/google-map.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeHaPgGuWo0BkikW8malLd2cfvUwXK64w&callback=initMap">
+    </script>
   </body>
 </html>
