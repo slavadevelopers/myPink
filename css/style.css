@@ -117,6 +117,7 @@ body {
   position: absolute;
   border-left: 320px solid #fff;
   border-bottom: 32px solid transparent;
+  left: 0px;
 }
 .chances {
   background-color: #f2f2f2;
@@ -171,6 +172,7 @@ body {
   text-align: center;
   padding-right: 20px;
   padding-left: 20px;
+  position: relative;
 }
 .reviews .rewiews__review-item:nth-child(2) {
   display: none;
@@ -196,12 +198,187 @@ body {
   color: #283645;
   font-weight: 400;
   line-height: 30px;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
+}
+.reviews::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 320px solid #fff;
+  border-bottom: 32px solid transparent;
+  left: 0px;
+}
+.control {
+  font-size: 0px;
+  padding-bottom: 42px;
 }
 .control .control__toggle {
   display: inline-block;
-  border: 3px solid #000;
+  vertical-align: middle;
   width: 6px;
-  height: 5px;
+  height: 6px;
   background-color: #bec2c7;
+  border-radius: 50%;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.control .control__toggle--active {
+  border: 3px solid #283645;
+  background-color: #fff;
+}
+.cost {
+  background-color: #f2f2f2;
+  padding-top: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.cost .control {
+  padding-bottom: 47px;
+}
+.cost .cost__table {
+  border-collapse: collapse;
+  width: 840px;
+  position: relative;
+  right: 280px;
+  margin-bottom: 40px;
+}
+.cost .cost__table th,
+.cost .cost__table td {
+  border: 2px solid #e5e5e5;
+  width: 276px;
+}
+.cost .cost__table th:first-child,
+.cost .cost__table td:first-child {
+  display: none;
+}
+.cost .cost__table th {
+  background-color: #283645;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+.cost .cost__table th span {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  line-height: 30px;
+}
+.cost .cost__table td {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #283645;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 14px 22px;
+  text-align: left;
+}
+.cost .cost__table th:nth-child(3)::before {
+  content: "Хит";
+  display: block;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  line-height: 24px;
+  transform: rotate(-45deg);
+  position: absolute;
+  border-bottom: 28px solid #d22856;
+  border-left: 28px solid transparent;
+  border-right: 28px solid transparent;
+  height: 0;
+  width: 50px;
+  left: -28px;
+  top: 13px;
+}
+.cost .cost__table th:nth-child(3) {
+  position: relative;
+}
+.main-footer {
+  display: none;
+}
+.contacts {
+  text-align: center;
+}
+.contacts .contacts__description {
+  position: relative;
+}
+.contacts .contacts__description::after {
+  content: "";
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-top: 35px solid #fff;
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+}
+.contacts .contacts__text {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: #283645;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+.contacts .contacts__phone-text {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #283645;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 2px;
+}
+.contacts .contacts__phone-number {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: #d22856;
+  font-weight: 300;
+  margin-bottom: 22px;
+  margin-top: 2px;
+}
+.contacts .contacts__arrive-text {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #283645;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 2px;
+}
+.contacts .contacts__arrive-address {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: #d22856;
+  font-weight: 300;
+  margin-bottom: 22px;
+  margin-top: 2px;
+}
+.contacts .contacts__mail-text {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #283645;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 2px;
+}
+.contacts .contacts__mail-email {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: #d22856;
+  font-weight: 300;
+  margin-bottom: 22px;
+  margin-top: 2px;
+}
+.contacts .contacts__map {
+  height: 200px;
+}
+#map {
+  height: 100%;
 }
