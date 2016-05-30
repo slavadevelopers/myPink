@@ -13,14 +13,20 @@
       <a class="logo" href="#">
           <img class="logo__glasses" src="img/glasses.png" alt="Очки" width="59" height="40"><img src="img/pink-logo.png" alt="Pink" width="74" height="24">
       </a>
+      <span class="burger"></span>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__active-item"><a href="#">Информация</a></li>
-          <li><a href="#">Возможности</a></li>
-          <li><a href="#">Отзывы</a></li>
-          <li><a href="#">Стоимость</a></li>
+          <li>
+            <span class="main-nav__list-item" href="#">
+              <img class="main-nav__pink" src="img/pink-logo.png" alt="Pink" width="74" height="24"><img class="main-nav__burger--close" src="img/main-nav__burger--close.png">
+            </span>
+          </li>
+          <li class="main-nav__active-item"><a class="main-nav__list-item" href="#info">Информация</a></li>
+          <li><a class="main-nav__list-item" href="#chances">Возможности</a></li>
+          <li><a class="main-nav__list-item" href="#reviews">Отзывы</a></li>
+          <li><a class="main-nav__list-item" href="#cost">Стоимость</a></li>
         </ul>
-        <span class="main-nav__burger  main-nav__burger--close"></span>
+        
       </nav>
     </header> 
     <main class="main--contains">
@@ -36,11 +42,11 @@
         </div>
         <p class="downloads-apps__description">Доступен для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
       </section>
-      <section class="info">
+      <section class="info" id="info">
         <p class="info__question">Устали от серости мегаполиса?</p>
         <p class="info__offer">Нам есть, что вам предложить!</p>
       </section>
-      <article class="chances">
+      <article class="chances" id="chances">
         <section class="chances__chance-item">
           <img class="chances__img-item" src="img/iphone-screen-2-1@1x.png" alt="Поднимает настроение" width="186" height="300">
           <p class="chances__title">Поднимает настроение</p>
@@ -63,7 +69,7 @@
           <a class="chance__link-item" href="#">Узнать больше об иследовании</a>
         </section>
       </article>
-      <article class="reviews">
+      <article class="reviews" id="reviews">
         <section class="rewiews__review-item">
           <p class="reviews__name">Николай Петров</p>
           <p class="reviews__details">25 лет, водитель трамвая</p>
@@ -87,7 +93,7 @@
           <i class="control__toggle"></i>
         </section>
       </article>
-      <section class="cost">
+      <section class="cost" id="cost">
         <table class="cost__table">
           <tr>
             <th></th><th>Базовый<br> <span>1,99 USD</span></th><th>Стандарт<br> <span>3,99 USD</span></th><th>Анлим<br> <span>9,99 USD</span></th>
@@ -115,7 +121,7 @@
           <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
           <section class="contacts__phone">
             <p class="contacts__phone-text">Звоните:</p>
-            <p class="contacts__phone-number">8 (800) 1000 900</p>
+            <p class="contacts__phone-number"><a href="tel:+78001000900">8 (800) 1000 900</a></p>
           </section>
           <section class="contacts__arrive">
             <p class="contacts__arrive-text">Приезжайте в гости:</p>
@@ -123,7 +129,7 @@
           </section>
           <section class="contacts__mail">
             <p class="contacts__mail-text">Пишите:</p>
-            <p class="contacts__mail-email">hello@pinkapps.ru</p>
+            <p class="contacts__mail-email"><a href="mailto:hello@pinkapps.ru">hello@pinkapps.ru</a></p>
           </section>
         </section>
         <section class="contacts__map">
