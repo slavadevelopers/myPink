@@ -28,6 +28,9 @@
     .light-font(@red-210);
     margin-bottom: 22px;
     margin-top: 2px;
+    & a {
+      color: @red-210;
+    }
   }
   & .contacts__arrive {
 
@@ -52,6 +55,17 @@
     .light-font(@red-210);
     margin-bottom: 22px;
     margin-top: 2px;
+    & a {
+      color: @red-210;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: @dark-blue;
+      }
+      &:active {
+        opacity: .3;
+      }
+    }
   }
   & .contacts__map {
     height: 200px;
