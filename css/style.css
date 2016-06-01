@@ -293,6 +293,84 @@ body {
   margin-top: 12px;
   margin-bottom: 12px;
 }
+@media (min-width: 700px) {
+  .chances {
+    text-align: left;
+    margin-bottom: 9px;
+  }
+  .chances .chances__inner {
+    float: right;
+    width: 300px;
+  }
+  .chances .chances__chance-item:last-child {
+    display: block;
+    margin-bottom: 0px;
+  }
+  .chances .chances__chance-item:last-child .chances__img-item {
+    display: inline-block;
+    width: 264px;
+    height: 308px;
+  }
+  .chances .chances__chance-item:last-child .chances__title {
+    font-size: 30px;
+    width: 170px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    margin-top: 39px;
+  }
+  .chances .chances__chance-item:last-child .chance__link-item {
+    color: #d22856;
+    text-decoration: none;
+  }
+  .chances .chances__chance-item:last-child .chance__link-item:hover {
+    text-decoration: underline;
+    color: #283645;
+  }
+  .chances .chances__chance-item:last-child .chance__link-item:active {
+    opacity: .3;
+  }
+  .chances .chances__chance-item:last-child .chances__description {
+    margin-top: 10px;
+  }
+  .chances .chances__img-item {
+    display: none;
+  }
+  .chances .chances__chance-item:nth-child(3) {
+    display: block;
+    position: relative;
+  }
+  .chances .chances__chance-item:nth-child(3) .chances__img-item {
+    display: block;
+    width: 267px;
+    height: 480px;
+    position: absolute;
+    top: -354px;
+    left: 16px;
+  }
+  .chances .chances__chance-item {
+    padding-left: 328px;
+    padding-right: 14px;
+    margin-bottom: 34px;
+  }
+  .chances .chances__chance-item:last-child {
+    width: 618px;
+    background-color: #fff;
+    position: relative;
+    left: -24px;
+    padding-right: 42px;
+    padding-left: 40px;
+    padding-top: 57px;
+  }
+  .chances .chances__title {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+  }
+}
 .reviews {
   text-align: center;
   padding-right: 20px;
@@ -334,6 +412,36 @@ body {
   border-bottom: 32px solid transparent;
   left: 0px;
 }
+@media (min-width: 700px) {
+  .reviews .rewiews__review-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews .reviews__name {
+    order: 2;
+    font-size: 20px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+  }
+  .reviews .reviews__details {
+    display: block;
+    order: 3;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: #283645;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 0px;
+    margin-bottom: 42px;
+  }
+  .reviews .reviews__text {
+    order: 1;
+    font-size: 18px;
+  }
+  .reviews::after {
+    border-left: 720px solid #fff;
+  }
+}
 .control {
   font-size: 0px;
   padding-bottom: 42px;
@@ -363,6 +471,11 @@ body {
 }
 .control .control__toggle--active:active {
   background-color: #fff;
+}
+@media (min-width: 700px) {
+  .control {
+    padding-bottom: 19px;
+  }
 }
 .cost {
   background-color: #f2f2f2;
