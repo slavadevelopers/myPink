@@ -12,12 +12,26 @@
   width: 280px;
   margin: 0 auto;
 }
+@media (min-width: 700px) {
+  .page-header--contains {
+    width: 660px;
+  }
+}
 .logo {
   float: left;
   width: 74px;
 }
 .logo .logo__glasses {
   display: none;
+}
+@media (min-width: 700px) {
+  .logo {
+    width: 145px;
+  }
+  .logo .logo__glasses {
+    display: inline-block;
+    margin-right: 12px;
+  }
 }
 .main-nav {
   position: absolute;
@@ -52,6 +66,7 @@
   margin-right: 183px;
 }
 .main-nav .main-nav__burger--close {
+  margin-top: 2px;
   background: url("../img/main-nav__burger--close.png");
   display: block;
   width: 23px;
@@ -66,6 +81,11 @@
   background-color: #283645;
   position: static;
   border-bottom: 1px solid #010101;
+}
+@media (min-width: 700px) {
+  .main-nav .main-nav__burger--close {
+    margin-top: 18px;
+  }
 }
 .presentation {
   background: url(../img/presentation__iphone.png) no-repeat left bottom, url("../img/bg-presentation.png") no-repeat;
@@ -83,9 +103,26 @@
   color: #fff;
   font-weight: 300;
 }
+@media (min-width: 700px) {
+  .presentation {
+    background: url(../img/presentation__iphone@700.png) no-repeat left bottom, url("../img/bg-presentation@700.png") no-repeat;
+  }
+  .presentation .presentation__title {
+    padding-bottom: 376px;
+    font-size: 40px;
+    width: 190px;
+    margin-top: 104px;
+    margin-left: 95px;
+  }
+}
 .main--contains {
   width: 320px;
   margin: 0 auto;
+}
+@media (min-width: 700px) {
+  .main--contains {
+    width: 700px;
+  }
 }
 .downloads-apps {
   background-color: #1d2631;
@@ -96,6 +133,7 @@
 }
 .downloads-apps .downloads-apps__button {
   display: block;
+  line-height: 24px;
   font-size: 18px;
   color: #fff;
   text-decoration: none;
@@ -137,9 +175,30 @@
   padding-bottom: 30px;
   margin: 0px;
 }
+@media (min-width: 700px) {
+  .downloads-apps {
+    width: 300px;
+    background-color: transparent;
+    position: absolute;
+    top: 335px;
+    padding-left: 40px;
+  }
+  .downloads-apps .downloads-apps__description {
+    font-size: 18px;
+  }
+  .downloads-apps .downloads-apps__downloads-icons--inner {
+    padding-top: 42px;
+    padding-bottom: 39px;
+  }
+}
 body {
   width: 320px;
   margin: 0 auto;
+}
+@media (min-width: 700px) {
+  body {
+    width: 700px;
+  }
 }
 .info {
   font-size: 24px;
@@ -163,6 +222,27 @@ body {
   border-left: 320px solid #fff;
   border-bottom: 32px solid transparent;
   left: 0px;
+}
+@media (min-width: 700px) {
+  .info {
+    font-size: 40px;
+    padding-top: 5px;
+  }
+  .info .info__question {
+    margin-bottom: 0px;
+    line-height: 48px;
+  }
+  .info .info__offer {
+    margin-top: 0px;
+    line-height: 48px;
+    width: 330px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 4px;
+  }
+  .info::after {
+    border-left: 700px solid #fff;
+  }
 }
 .chances {
   background-color: #f2f2f2;
@@ -469,4 +549,9 @@ body {
   height: 22px;
   cursor: pointer;
   float: right;
+}
+@media (min-width: 700px) {
+  .burger {
+    margin-top: 16px;
+  }
 }
