@@ -39,3 +39,78 @@
     margin-bottom: 12px;
   }
 }
+
+@media (min-width: 700px) {
+  .chances {
+    text-align: left;
+    margin-bottom: 9px;
+    & .chances__inner {
+    float: right;
+    width: 300px;
+    }
+    & .chances__chance-item:last-child {
+      display: block;
+      margin-bottom: 0px;
+      & .chances__img-item {
+        display: inline-block;
+        width: 264px;
+        height: 308px;
+      }
+      & .chances__title {
+        font-size: 30px;
+        width: 170px;
+        line-height: 36px;
+        margin-bottom: 10px;
+        margin-top: 39px;
+      }
+      & .chance__link-item {
+         color: @red-210;
+         text-decoration: none;
+         &:hover {
+           text-decoration: underline;
+           color: @dark-blue;
+         }
+         &:active{
+           opacity: .3;
+         }
+      }
+      & .chances__description {
+        margin-top: 10px;
+      }
+    }
+    & .chances__img-item {
+      display: none;
+    }
+    & .chances__chance-item:nth-child(3) {
+      display: block;
+      position: relative;
+      & .chances__img-item {
+      display: block;
+      width: 267px;
+      height: 480px;
+      position: absolute;
+      top: -354px;
+      left: 16px;
+      }
+    }
+    & .chances__chance-item {
+      padding-left: 328px;
+      padding-right: 14px;
+      margin-bottom: 34px;
+      &:last-child {
+        width: 618px;
+        background-color: @color-white;
+        position: relative;
+        left: -24px;
+        padding-right: 42px;
+        padding-left: 40px;
+        padding-top: 57px;
+      }
+    }
+    & .chances__title {
+    .bold-font(@color-black);
+    margin-bottom: 12px;
+    margin-top: 24px;
+  }
+  }
+}

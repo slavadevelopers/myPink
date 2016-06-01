@@ -26,5 +26,33 @@
   }
   &::after {
     .triangle;
-  };
+  }
+}
+@media (min-width: 700px) {
+  .reviews {
+    & .rewiews__review-item {
+      display: flex;
+      flex-direction: column;
+    }
+    & .reviews__name {
+      order: 2;
+      font-size: 20px;
+      margin-top: 6px;
+      margin-bottom: 12px;
+    }
+    & .reviews__details {
+       display: block;
+       order: 3;
+       .normal-font(@dark-blue, 14px);
+       margin-top: 0px;
+       margin-bottom: 42px;
+    }
+    & .reviews__text {
+      order: 1;
+      font-size: 18px;
+    }
+    &::after {
+      border-left: 720px solid @color-white;
+    }
+  }
 }
