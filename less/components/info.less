@@ -13,3 +13,24 @@
     .triangle;
   };
 }
+@media (min-width: 700px) {
+  .info {
+    font-size: 40px;
+    padding-top: 5px;
+    & .info__question {
+      margin-bottom: 0px;
+      line-height: 48px;
+    }
+    & .info__offer {
+      margin-top: 0px;
+      line-height: 48px;
+      width: 330px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-bottom: 4px;
+    }
+    &::after {
+      border-left: 700px solid @color-white;
+    }
+  }
+}
