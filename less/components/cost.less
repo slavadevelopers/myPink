@@ -39,6 +39,7 @@
      text-transform: uppercase;
      padding: 14px 22px;
      text-align: left;
+     position: relative;
    }
    & th:nth-child(3)::before {
      content: "Хит";
@@ -57,5 +58,85 @@
    & th:nth-child(3) {
     position: relative;
    }
+   & td::after {
+     content: "";
+     display: inline-block;
+     background-image: url("../img/sprite/sprite_tabel/sprites.png");
+     width: 29px;
+     height: 26px;
+     vertical-align: middle;
+     position: absolute;
+     right: 22px;
+    }
+    & .cost__table-no::after {
+      background-position: 0 -50px;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .cost {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 72px;
+    padding-bottom: 26px;
+    & .cost__table {
+      position: static;
+      width: 620px;
+      & td:first-child,
+        th:first-child {
+        display: table-cell;
+      }
+      & td:first-child {
+        text-align: left;
+      }
+      & td:first-child::after {
+        display: none;
+      }
+      & td {
+        text-transform: none;
+        padding: 7px 15px;
+        text-align: center;
+      }
+      & td::after {
+        content: "";
+        display: inline-block;
+        background-image: url("../img/sprite/sprite_tabel/sprites.png");
+        width: 29px;
+        height: 26px;
+        position: static;
+
+      }
+      & th:first-child {
+        background-color: transparent;
+        border: none;
+      }
+      & th {
+        font-size: 16px;
+        padding-top: 12px;
+        padding-bottom: 9px;
+        & span {
+          font-size: 18px;
+        }
+      }
+      & th:nth-child(3)::before {
+          border-bottom: 28px solid #d22856;
+          border-left: 28px solid transparent;
+          border-right: 28px solid transparent;
+          height: 0;
+          width: 30px;
+          left: -23px;
+          top: 6px;
+      }
+    }
+    & .control {
+      display: none;
+    }
+    & .cost__td-content {
+      display: none;
+    }
+    & .cost__table-no::after {
+      background-position: 0 -50px;
+    }
   }
 }
