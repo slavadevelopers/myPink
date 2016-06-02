@@ -531,6 +531,7 @@ body {
   text-transform: uppercase;
   padding: 14px 22px;
   text-align: left;
+  position: relative;
 }
 .cost .cost__table th:nth-child(3)::before {
   content: "Хит";
@@ -553,8 +554,91 @@ body {
 .cost .cost__table th:nth-child(3) {
   position: relative;
 }
+.cost .cost__table td::after {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/sprite/sprite_tabel/sprites.png");
+  width: 29px;
+  height: 26px;
+  vertical-align: middle;
+  position: absolute;
+  right: 22px;
+}
+.cost .cost__table .cost__table-no::after {
+  background-position: 0 -50px;
+}
+@media (min-width: 700px) {
+  .cost {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 72px;
+    padding-bottom: 26px;
+  }
+  .cost .cost__table {
+    position: static;
+    width: 620px;
+  }
+  .cost .cost__table td:first-child,
+  .cost .cost__table th:first-child {
+    display: table-cell;
+  }
+  .cost .cost__table td:first-child {
+    text-align: left;
+  }
+  .cost .cost__table td:first-child::after {
+    display: none;
+  }
+  .cost .cost__table td {
+    text-transform: none;
+    padding: 7px 15px;
+    text-align: center;
+  }
+  .cost .cost__table td::after {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/sprite/sprite_tabel/sprites.png");
+    width: 29px;
+    height: 26px;
+    position: static;
+  }
+  .cost .cost__table th:first-child {
+    background-color: transparent;
+    border: none;
+  }
+  .cost .cost__table th {
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 9px;
+  }
+  .cost .cost__table th span {
+    font-size: 18px;
+  }
+  .cost .cost__table th:nth-child(3)::before {
+    border-bottom: 28px solid #d22856;
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;
+    height: 0;
+    width: 30px;
+    left: -23px;
+    top: 6px;
+  }
+  .cost .control {
+    display: none;
+  }
+  .cost .cost__td-content {
+    display: none;
+  }
+  .cost .cost__table-no::after {
+    background-position: 0 -50px;
+  }
+}
 .main-footer {
   display: none;
+}
+@media (min-width: 700px) {
+  .main-footer {
+    display: block;
+  }
 }
 .contacts {
   text-align: center;
@@ -643,6 +727,59 @@ body {
 }
 .contacts .contacts__map {
   height: 200px;
+}
+@media (min-width: 700px) {
+  .contacts .contacts__description::after {
+    border-left: 350px solid transparent;
+    border-right: 350px solid transparent;
+    border-top: 70px solid #fff;
+  }
+  .contacts .contacts__text {
+    width: 370px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 47px;
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-top: 5px;
+  }
+  .contacts .contacts__phone {
+    order: 1;
+    width: 187px;
+    padding-left: 77px;
+    padding-right: 76px;
+  }
+  .contacts .contacts__phone-text {
+    margin-top: 12px;
+  }
+  .contacts .contacts__arrive {
+    order: 3;
+    width: 270px;
+    padding-left: 215px;
+    padding-right: 215px;
+  }
+  .contacts .contacts__arrive-text {
+    margin-top: 24px;
+  }
+  .contacts .contacts__arrive-address {
+    margin-bottom: 24px;
+  }
+  .contacts .contacts__mail {
+    order: 2;
+    width: 207px;
+    padding-right: 77px;
+    padding-left: 76px;
+  }
+  .contacts .contacts__mail-text {
+    margin-top: 12px;
+  }
+  .contacts .contacts__map {
+    height: 344px;
+  }
+  .contacts .contacts__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 #map {
   height: 100%;
