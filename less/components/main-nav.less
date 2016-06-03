@@ -12,14 +12,23 @@
     margin-bottom: 0px;
     text-align: @cn;
     & .main-nav__list-item {
-    .bold-font(@color-white, 18px);
+      display: block;
+      background-color: @dark-blue;
+      padding-top: 23px;
+      padding-bottom: 23px;
+      border-bottom: 1px solid @dark-border;
+      border-top: 1px solid @light-border;
+    }
+  }
+  & .main-nav__link {
     text-decoration: none;
-    display: block;
-    background-color: @dark-blue;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    border-bottom: 1px solid @dark-border;
-    border-top: 1px solid @light-border;
+    .bold-font(@color-white, 18px);
+    &:hover {
+      color: @red-210;
+    }
+    &:active {
+      color: @red-210;      
+      opacity: .3;
     }
   }   
   & .main-nav__pink {
